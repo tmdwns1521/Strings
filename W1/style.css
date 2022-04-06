@@ -1,0 +1,17 @@
+
+*{
+    margin: 0px;
+}
+
+.henry{
+    background: linear-gradient(100deg, pink, blue);
+    width: 100vw;
+    height: 100vh;
+
+    text-align: center;
+
+    /* Flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
