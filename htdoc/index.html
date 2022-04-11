@@ -9,20 +9,43 @@
         h1{
             border-bottom:10px solid green;
             padding:30px;
+            margin-bottom: 0;
         }
         h1 a{
             text-decoration: none;
         }
         ol{
-            border-right: 10px solid pink;
+            
+            margin-top: 0;
         }
-        #contatiner{
-            display:grid;
-            grid-template-columns: 150px 1fr;
+        @media all and (min-width: 480px){
+            #contatiner{
+                display:grid;
+                grid-template-columns: 150px 1fr;
+            }
+            ol{
+                border-right: 10px solid pink;
+            }
         }
+        
     </style>
     </head>
 <body>
+    <input type="button" value="night" 
+        onclick="
+            if(this.value === 'night'){
+                document.querySelector('body').style.backgroundColor = 'black';
+                document.querySelector('body').style.color = 'white';
+                this.value = 'day';
+            }else{
+                document.querySelector('body').style.backgroundColor = 'white';
+                document.querySelector('body').style.color = 'black';
+                this.value = 'night';
+            }
+            
+        "
+    >
+
     <h1><a href="index.html">WEB</a></h1>
 
     <div id="contatiner">
@@ -31,14 +54,18 @@
             <li><a href="2.html">css</a></li>
             <li><a href="3.html">javascript</a></li>
         </ol>
+        <div>
+            <h2>Welcome</h2>
+            Hello, WEB!!!!!
+        </div>
     </div>
+    
 
     
 
-    <h2>Welcome</h2>
-    Hello, WEB!!!!!
     
-    <div id="disqus_thread"><iframe id="dsq-app2363" name="dsq-app2363" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="https://disqus.com/embed/comments/?base=default&amp;f=elice-sw2&amp;t_u=https%3A%2F%2Fegoingsb.github.io%2Felice-sw-2-2%2Findex.html&amp;t_d=WEB%20-%20Welcome&amp;t_t=WEB%20-%20Welcome&amp;s_o=default#version=31cd6fbd4797db790bc183cea2909ab5" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 288px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe><iframe id="indicator-north" name="indicator-north" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 1904px !important; border: none !important; overflow: hidden !important; top: 0px !important; min-width: 1904px !important; max-width: 1904px !important; position: fixed !important; z-index: 2147483646 !important; height: 0px !important; min-height: 0px !important; max-height: 0px !important; display: none !important;"></iframe><iframe id="indicator-south" name="indicator-south" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 1904px !important; border: none !important; overflow: hidden !important; bottom: 0px !important; min-width: 1904px !important; max-width: 1904px !important; position: fixed !important; z-index: 2147483646 !important; height: 0px !important; min-height: 0px !important; max-height: 0px !important; display: none !important;"></iframe></div>
+    
+    <!-- <div id="disqus_thread"><iframe id="dsq-app2363" name="dsq-app2363" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="https://disqus.com/embed/comments/?base=default&amp;f=elice-sw2&amp;t_u=https%3A%2F%2Fegoingsb.github.io%2Felice-sw-2-2%2Findex.html&amp;t_d=WEB%20-%20Welcome&amp;t_t=WEB%20-%20Welcome&amp;s_o=default#version=31cd6fbd4797db790bc183cea2909ab5" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 288px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe><iframe id="indicator-north" name="indicator-north" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 1904px !important; border: none !important; overflow: hidden !important; top: 0px !important; min-width: 1904px !important; max-width: 1904px !important; position: fixed !important; z-index: 2147483646 !important; height: 0px !important; min-height: 0px !important; max-height: 0px !important; display: none !important;"></iframe><iframe id="indicator-south" name="indicator-south" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 1904px !important; border: none !important; overflow: hidden !important; bottom: 0px !important; min-width: 1904px !important; max-width: 1904px !important; position: fixed !important; z-index: 2147483646 !important; height: 0px !important; min-height: 0px !important; max-height: 0px !important; display: none !important;"></iframe></div>
 <script>
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -74,4 +101,5 @@ if (window.addEventListener) {
 } else {
     window.attachEvent("onmessage", handleItemscoutExtensionMessage);
 }
-</script></html>
+</script> -->
+</html>
